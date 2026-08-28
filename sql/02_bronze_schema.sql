@@ -14,7 +14,7 @@ GO
 -- Netflix Content - Raw Table
 -- ============================================
 
-CREATE TABLE bronze.netflix_content (
+CREATE TABLE bronze.Netflix(
     show_id       VARCHAR(50),
     type          VARCHAR(50),
     title         VARCHAR(500),
