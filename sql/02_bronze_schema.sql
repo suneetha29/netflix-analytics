@@ -15,18 +15,18 @@ GO
 -- ============================================
 
 CREATE TABLE bronze.netflix_content (
-    show_id        VARCHAR(20),
-    type           VARCHAR(50),
-    title          VARCHAR(255),
-    director       VARCHAR(500),
-    cast           VARCHAR(MAX),
-    country        VARCHAR(500),
-    date_added     VARCHAR(50),
-    release_year   INT,
-    rating         VARCHAR(50),
-    duration       VARCHAR(50),
-    listed_in      VARCHAR(500),
-    description    VARCHAR(MAX)
+    show_id       VARCHAR(50),
+    type          VARCHAR(50),
+    title         VARCHAR(500),
+    director      VARCHAR(500),
+    cast          VARCHAR(MAX),
+    country       VARCHAR(500),
+    date_added    VARCHAR(100),
+    release_year  VARCHAR(50),
+    rating        VARCHAR(50),
+    duration      VARCHAR(100),
+    listed_in     VARCHAR(500),
+    description   VARCHAR(MAX)
 );
 GO
 
@@ -35,15 +35,16 @@ GO
 -- ============================================
 
 CREATE TABLE bronze.netflix_user_activity (
-    user_id              VARCHAR(50),
-    age                   INT,
-    gender                VARCHAR(20),
+    user_id               VARCHAR(100),
+    age_group             VARCHAR(50),
+    gender                VARCHAR(50),
     country               VARCHAR(100),
-    subscription_type     VARCHAR(50),
-    watch_hours           DECIMAL(10,2),
-    sessions              INT,
+    timezone              VARCHAR(100),
+    device                VARCHAR(100),
+    subscription_plan     VARCHAR(100),
+    watch_hours_month     VARCHAR(50),
+    sessions_month        VARCHAR(50),
     favorite_genre        VARCHAR(100),
-    device                VARCHAR(50),
-    preferred_watch_time  VARCHAR(50)
+    preferred_watch_time  VARCHAR(100)
 );
 GO
