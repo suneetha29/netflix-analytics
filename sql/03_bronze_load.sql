@@ -2,7 +2,7 @@ USE NetflixAnalytics;
 GO
 
 BULK INSERT bronze.netflix_content
-FROM 'C:\YOUR_ACTUAL_PATH\Netflix_30000_Unclean_Dataset.csv'
+FROM 'C:\Users\ABC\Downloads\Netflix_30000_Unclean_Dataset (1).csv'
 WITH
 (
     FIRSTROW = 2,
@@ -13,7 +13,7 @@ WITH
 GO
 
 BULK INSERT bronze.netflix_user_activity
-FROM 'C:\YOUR_ACTUAL_PATH\Netflix_User_Activity_30000_Unclean.csv'
+FROM 'C:\Users\ABC\Downloads\Netflix_User_Activity_30000_Unclean.csv'
 WITH
 (
     FIRSTROW = 2,
